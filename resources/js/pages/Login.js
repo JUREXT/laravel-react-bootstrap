@@ -65,10 +65,7 @@ class Login extends Component {
   handleSubmit = (e) => {
     e.preventDefault();
     const { email, password } = this.state;
-    const credentials = {
-      email,
-      password,
-    };
+    const credentials = { email, password };
 
     // Set response state back to default.
     this.setState({ response: { error: false, message: '' } });
